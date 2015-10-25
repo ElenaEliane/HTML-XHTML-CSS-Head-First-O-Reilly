@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru" >
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+</head>
+<body>
+    <h1>Starbuzz Bean Machine</h1>
+    <h2>Заполните следующую форму и нажмите кнопку Отправить, чтобы оформить заказ</h2>
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="POST">
+        <table>
+            <tr>
+        <th>Выберите кофе: </th>
+                <td>
+        <select name="beans">
+            <option value="Смесь">Домашняя смесь</option>
+            <option value="Боливия">Боливия</option>
+            <option value="Гватемала">Гватемала</option>
+            <option value="Кения">Кения</option>
+            <option value="-по одному для каждого сорта кофе">- по одному для каждого сорта кофе</option>
+            </select>
+                    </td>
+        </tr>
+            <tr>
+        <th>Тип:</th>
+                <td>
+        <input type="radio" name="beantype" value="зерна" checked="checked" /> Кофе в зернах <br />
+        <input type="radio" name="beantype" value="молотый" /> Молотый кофе
+                    </td>
+        </tr>
+            <tr>
+        <th>Дополнительные услуги: </th>
+                <td>
+        <input type="checkbox" name="extras[]" value="упаковка" />Подарочная упаковка <br />
+        <input type="checkbox" name="extras[]" value="каталог" checked="checked" /> Доставка
+        </td>
+                </tr>
+            <tr>
+        <th>Доставить по адресу: </th>
+                <td>
+                    <table>
+                        <tr>
+            <td>Имя:</td>
+            <td>
+                <input type="text" name="name" /> 
+            </td>
+            <td>Адрес:</td>
+            <td>
+                <input type="text" name="address" /> 
+            </td>
+            <td>Город:</td>
+            <td>
+                <input type="text" name="city" /> 
+            </td>
+            <td>Страна:</td>
+            <td>
+                <input type="text" name="state" /> 
+            </td>
+            <td>Индекс:</td> 
+            <td>
+                <input type="text" name="zip" /> 
+            </td>
+        </tr>
+                    </table>
+                    </td>
+                </tr>
+            <tr>
+        <th>Комментарии клиентов: </th>
+        <td>
+            <textarea name="comments" rows="10" cols="48"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><input type="submit" value="Заказать сейчас" /></td>
+        </tr>
+            </table>
+        <!--<fieldset>
+            <legend>Condiments</legend>
+            <input type="checkbox" name="spice" value="соль" />
+                   Соль <br />
+            <input type="checkbox" name="spice" value="перец" />
+                   Перец <br />
+            <input type="checkbox" name="spice" value="чеснок" />
+                   Чеснок <br />
+        </fieldset> -->
+    </form>
+</body>
+
+</html>
